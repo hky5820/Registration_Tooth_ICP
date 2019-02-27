@@ -21,11 +21,11 @@
   <ItemGroup>
     <ClCompile Include="load_stl_file.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="stil_file_info.cpp" />
+    <ClCompile Include="STILINFO.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="load_stl_file.h" />
-    <ClInclude Include="stl_file_info.h" />
+    <ClInclude Include="STLINFO.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

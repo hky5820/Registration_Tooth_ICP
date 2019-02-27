@@ -36,16 +36,16 @@
     <ClCompile Include="load_stl_file.cpp">
       <Filter>소스 파일\load_stl_file</Filter>
     </ClCompile>
-    <ClCompile Include="stil_file_info.cpp">
+    <ClCompile Include="STILINFO.cpp">
       <Filter>소스 파일\prepare</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stl_file_info.h">
-      <Filter>헤더 파일\prepare</Filter>
-    </ClInclude>
     <ClInclude Include="load_stl_file.h">
       <Filter>헤더 파일\load_stl_file</Filter>
+    </ClInclude>
+    <ClInclude Include="STLINFO.h">
+      <Filter>헤더 파일\prepare</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
