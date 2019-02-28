@@ -19,12 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="load_stl_file.cpp" />
+    <ClCompile Include="calc_average_xyz.cpp" />
+    <ClCompile Include="calc_covariance_matrix.cpp" />
+    <ClCompile Include="load_and_split_stl_format.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="STILINFO.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="load_stl_file.h" />
+    <ClInclude Include="calc_average_xyz.h" />
+    <ClInclude Include="calc_covariance_matrix.h" />
+    <ClInclude Include="load_and_split_stl_format.h" />
     <ClInclude Include="STLINFO.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -78,7 +82,18 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\User\Desktop\Registration_Tooth_ICP\Library_Eigen_3.3.7;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\User\Desktop\Registration_Tooth_ICP\Library_Eigen_3.3.7;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\User\Desktop\Registration_Tooth_ICP\Library_Eigen_3.3.7;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\User\Desktop\Registration_Tooth_ICP\Library_Eigen_3.3.7;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>

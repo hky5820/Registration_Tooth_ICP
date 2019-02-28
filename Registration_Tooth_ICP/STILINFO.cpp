@@ -8,7 +8,10 @@ STLINFO::STLINFO() {
 
 void STLINFO::ready_for_spliting_foreach_triangle()
 {
-	//capacity secure
+	//secure capacity
 	vec_norm.resize(num_of_triangle);
-	xyz_jaw.resize(num_of_triangle * 3);
+	triangle.resize(num_of_triangle);
+	X.resize(num_of_triangle * 3);
+	Y.resize(num_of_triangle * 3);
+	Z.resize(num_of_triangle * 3);
 }

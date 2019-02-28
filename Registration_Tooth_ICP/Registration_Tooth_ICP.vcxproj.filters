@@ -16,36 +16,54 @@
     <Filter Include="소스 파일\main">
       <UniqueIdentifier>{506963cc-87d7-48b6-a336-16d4f11d13e2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\load_stl_file">
-      <UniqueIdentifier>{9f692d27-f247-4f89-8709-cbe4c993854b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="헤더 파일\prepare">
       <UniqueIdentifier>{8c0d7c6d-0b0e-4a4a-96ab-45735221e7c2}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\prepare">
       <UniqueIdentifier>{a45b99eb-cc97-4dca-8cad-fd41e024eb22}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일\load_stl_file">
+    <Filter Include="소스 파일\load_and_split_stl_format">
+      <UniqueIdentifier>{9f692d27-f247-4f89-8709-cbe4c993854b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\load_and_split_stl_format">
       <UniqueIdentifier>{62cd0c6a-690a-45ec-b1f8-ad494bdd2a89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\PCA">
+      <UniqueIdentifier>{93469a4f-7eb8-47d1-9c37-665689bb9da4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\PCA">
+      <UniqueIdentifier>{0ad47a7c-6f89-411d-9fd9-a635a4f3e454}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일\main</Filter>
     </ClCompile>
-    <ClCompile Include="load_stl_file.cpp">
-      <Filter>소스 파일\load_stl_file</Filter>
-    </ClCompile>
     <ClCompile Include="STILINFO.cpp">
       <Filter>소스 파일\prepare</Filter>
     </ClCompile>
+    <ClCompile Include="load_and_split_stl_format.cpp">
+      <Filter>소스 파일\load_and_split_stl_format</Filter>
+    </ClCompile>
+    <ClCompile Include="calc_average_xyz.cpp">
+      <Filter>소스 파일\PCA</Filter>
+    </ClCompile>
+    <ClCompile Include="calc_covariance_matrix.cpp">
+      <Filter>소스 파일\PCA</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="load_stl_file.h">
-      <Filter>헤더 파일\load_stl_file</Filter>
-    </ClInclude>
     <ClInclude Include="STLINFO.h">
       <Filter>헤더 파일\prepare</Filter>
+    </ClInclude>
+    <ClInclude Include="load_and_split_stl_format.h">
+      <Filter>헤더 파일\load_and_split_stl_format</Filter>
+    </ClInclude>
+    <ClInclude Include="calc_average_xyz.h">
+      <Filter>헤더 파일\PCA</Filter>
+    </ClInclude>
+    <ClInclude Include="calc_covariance_matrix.h">
+      <Filter>헤더 파일\PCA</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
