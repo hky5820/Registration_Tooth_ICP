@@ -42,5 +42,6 @@ public:
 	vector<float> Z; 
 
 	STLINFO();
+	STLINFO(STLINFO &ref);
 	void ready_for_spliting_foreach_triangle();
 };

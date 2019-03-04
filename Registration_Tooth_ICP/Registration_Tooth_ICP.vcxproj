@@ -19,17 +19,27 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="applying_rotation.cpp" />
     <ClCompile Include="calc_average_xyz.cpp" />
+    <ClCompile Include="calc_eigendecompostion.cpp" />
     <ClCompile Include="calc_covariance_matrix.cpp" />
+    <ClCompile Include="calc_mat_rotation.cpp" />
+    <ClCompile Include="initial_registration.cpp" />
     <ClCompile Include="load_and_split_stl_format.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="STILINFO.cpp" />
+    <ClCompile Include="stl_add_and_save.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="applying_rotation.h" />
     <ClInclude Include="calc_average_xyz.h" />
+    <ClInclude Include="calc_eigendecompostion.h" />
     <ClInclude Include="calc_covariance_matrix.h" />
+    <ClInclude Include="calc_mat_rotation.h" />
+    <ClInclude Include="initial_registration.h" />
     <ClInclude Include="load_and_split_stl_format.h" />
     <ClInclude Include="STLINFO.h" />
+    <ClInclude Include="stl_add_and_save.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

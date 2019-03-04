@@ -34,6 +34,12 @@
     <Filter Include="헤더 파일\PCA">
       <UniqueIdentifier>{0ad47a7c-6f89-411d-9fd9-a635a4f3e454}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\initial_registration">
+      <UniqueIdentifier>{b3a1b552-60bf-4f3f-ba41-322dbc61735f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\initial_registration">
+      <UniqueIdentifier>{287016dc-3939-4db8-90eb-d409053562e7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -51,6 +57,21 @@
     <ClCompile Include="calc_covariance_matrix.cpp">
       <Filter>소스 파일\PCA</Filter>
     </ClCompile>
+    <ClCompile Include="calc_eigendecompostion.cpp">
+      <Filter>소스 파일\PCA</Filter>
+    </ClCompile>
+    <ClCompile Include="initial_registration.cpp">
+      <Filter>소스 파일\initial_registration</Filter>
+    </ClCompile>
+    <ClCompile Include="calc_mat_rotation.cpp">
+      <Filter>소스 파일\initial_registration</Filter>
+    </ClCompile>
+    <ClCompile Include="applying_rotation.cpp">
+      <Filter>소스 파일\initial_registration</Filter>
+    </ClCompile>
+    <ClCompile Include="stl_add_and_save.cpp">
+      <Filter>소스 파일\prepare</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="STLINFO.h">
@@ -64,6 +85,21 @@
     </ClInclude>
     <ClInclude Include="calc_covariance_matrix.h">
       <Filter>헤더 파일\PCA</Filter>
+    </ClInclude>
+    <ClInclude Include="calc_eigendecompostion.h">
+      <Filter>헤더 파일\PCA</Filter>
+    </ClInclude>
+    <ClInclude Include="initial_registration.h">
+      <Filter>헤더 파일\initial_registration</Filter>
+    </ClInclude>
+    <ClInclude Include="calc_mat_rotation.h">
+      <Filter>헤더 파일\initial_registration</Filter>
+    </ClInclude>
+    <ClInclude Include="applying_rotation.h">
+      <Filter>헤더 파일\initial_registration</Filter>
+    </ClInclude>
+    <ClInclude Include="stl_add_and_save.h">
+      <Filter>헤더 파일\prepare</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
