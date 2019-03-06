@@ -29,18 +29,19 @@ void load_and_split_stl_format(const char * name, STLINFO & jaw)
 
 		jaw.attribute_byte_count.push_back(attribute_byte_count_splited);
 
-		// for calculation covariance matrix
-		jaw.X[j]     = jaw.triangle[i].first.x;
+		// make each x, y, z vector for calculation covariance matrix
+		jaw.X[j    ] = jaw.triangle[i].first.x;
 		jaw.X[j + 1] = jaw.triangle[i].second.x;
 		jaw.X[j + 2] = jaw.triangle[i].third.x;
 
-		jaw.Y[j]     = jaw.triangle[i].first.y;
+		jaw.Y[j    ] = jaw.triangle[i].first.y;
 		jaw.Y[j + 1] = jaw.triangle[i].second.y;
 		jaw.Y[j + 2] = jaw.triangle[i].third.y;
 
-		jaw.Z[j]     = jaw.triangle[i].first.z;
+		jaw.Z[j    ] = jaw.triangle[i].first.z;
 		jaw.Z[j + 1] = jaw.triangle[i].second.z;
 		jaw.Z[j + 2] = jaw.triangle[i].third.z;
 		j += 3;
+
 	}
 }

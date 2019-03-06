@@ -28,17 +28,53 @@
     <Filter Include="헤더 파일\load_and_split_stl_format">
       <UniqueIdentifier>{62cd0c6a-690a-45ec-b1f8-ad494bdd2a89}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\PCA">
-      <UniqueIdentifier>{93469a4f-7eb8-47d1-9c37-665689bb9da4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\PCA">
-      <UniqueIdentifier>{0ad47a7c-6f89-411d-9fd9-a635a4f3e454}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\initial_registration">
       <UniqueIdentifier>{b3a1b552-60bf-4f3f-ba41-322dbc61735f}</UniqueIdentifier>
     </Filter>
     <Filter Include="헤더 파일\initial_registration">
       <UniqueIdentifier>{287016dc-3939-4db8-90eb-d409053562e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ICP">
+      <UniqueIdentifier>{1c87d3fd-49f0-442b-a7a2-977dee152b85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ICP\calc_closest_point">
+      <UniqueIdentifier>{88f5b563-bbde-485a-80ed-f1ce07071a33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\ICP">
+      <UniqueIdentifier>{a524000d-25b3-45be-a737-d7c7da3b99b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\ICP\calc_closest_point">
+      <UniqueIdentifier>{63e7974f-e18b-4cc5-8f39-4417ae62f626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\initial_registration\PCA">
+      <UniqueIdentifier>{0ad47a7c-6f89-411d-9fd9-a635a4f3e454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\initial_registration\PCA\prepare">
+      <UniqueIdentifier>{1ae215cc-f73e-491c-b174-618426d50a48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\initial_registration\PCA\translation">
+      <UniqueIdentifier>{b183f0eb-8121-41e3-93a7-7ddfc66e468a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\initial_registration\PCA\rotation">
+      <UniqueIdentifier>{6515f6fe-50b1-4152-80b1-0ad58128f9e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\initial_registration\PCA">
+      <UniqueIdentifier>{93469a4f-7eb8-47d1-9c37-665689bb9da4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\initial_registration\PCA\prepare">
+      <UniqueIdentifier>{57f4e948-1893-4bac-b42c-4eb599616315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\initial_registration\PCA\rotation">
+      <UniqueIdentifier>{12573faa-80a0-4f01-bb1d-b02e6fad85f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\initial_registration\PCA\translation_to_origin">
+      <UniqueIdentifier>{b152ec4d-2e5c-4dc3-a4f2-26b2341d5ca2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ICP\calc_closest_point\KD-tree">
+      <UniqueIdentifier>{044f173c-0711-4b74-a759-b394bba5f41a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\ICP\calc_closest_point\KD-tree">
+      <UniqueIdentifier>{151481c8-baa1-49dd-868c-f1a5dc2daf29}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -51,26 +87,35 @@
     <ClCompile Include="load_and_split_stl_format.cpp">
       <Filter>소스 파일\load_and_split_stl_format</Filter>
     </ClCompile>
-    <ClCompile Include="calc_average_xyz.cpp">
-      <Filter>소스 파일\PCA</Filter>
-    </ClCompile>
-    <ClCompile Include="calc_covariance_matrix.cpp">
-      <Filter>소스 파일\PCA</Filter>
-    </ClCompile>
-    <ClCompile Include="calc_eigendecompostion.cpp">
-      <Filter>소스 파일\PCA</Filter>
-    </ClCompile>
     <ClCompile Include="initial_registration.cpp">
-      <Filter>소스 파일\initial_registration</Filter>
-    </ClCompile>
-    <ClCompile Include="calc_mat_rotation.cpp">
-      <Filter>소스 파일\initial_registration</Filter>
-    </ClCompile>
-    <ClCompile Include="applying_rotation.cpp">
       <Filter>소스 파일\initial_registration</Filter>
     </ClCompile>
     <ClCompile Include="stl_add_and_save.cpp">
       <Filter>소스 파일\prepare</Filter>
+    </ClCompile>
+    <ClCompile Include="calc_closest_point.cpp">
+      <Filter>소스 파일\ICP\calc_closest_point</Filter>
+    </ClCompile>
+    <ClCompile Include="calc_average_xyz.cpp">
+      <Filter>소스 파일\initial_registration\PCA\prepare</Filter>
+    </ClCompile>
+    <ClCompile Include="calc_covariance_matrix.cpp">
+      <Filter>소스 파일\initial_registration\PCA\prepare</Filter>
+    </ClCompile>
+    <ClCompile Include="calc_eigendecompostion.cpp">
+      <Filter>소스 파일\initial_registration\PCA\prepare</Filter>
+    </ClCompile>
+    <ClCompile Include="applying_rotation.cpp">
+      <Filter>소스 파일\initial_registration\PCA\rotation</Filter>
+    </ClCompile>
+    <ClCompile Include="calc_mat_rotation.cpp">
+      <Filter>소스 파일\initial_registration\PCA\rotation</Filter>
+    </ClCompile>
+    <ClCompile Include="translation_to_origin.cpp">
+      <Filter>소스 파일\initial_registration\PCA\translation_to_origin</Filter>
+    </ClCompile>
+    <ClCompile Include="KDTree.cpp">
+      <Filter>소스 파일\ICP\calc_closest_point\KD-tree</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -80,26 +125,35 @@
     <ClInclude Include="load_and_split_stl_format.h">
       <Filter>헤더 파일\load_and_split_stl_format</Filter>
     </ClInclude>
-    <ClInclude Include="calc_average_xyz.h">
-      <Filter>헤더 파일\PCA</Filter>
-    </ClInclude>
-    <ClInclude Include="calc_covariance_matrix.h">
-      <Filter>헤더 파일\PCA</Filter>
-    </ClInclude>
-    <ClInclude Include="calc_eigendecompostion.h">
-      <Filter>헤더 파일\PCA</Filter>
-    </ClInclude>
     <ClInclude Include="initial_registration.h">
-      <Filter>헤더 파일\initial_registration</Filter>
-    </ClInclude>
-    <ClInclude Include="calc_mat_rotation.h">
-      <Filter>헤더 파일\initial_registration</Filter>
-    </ClInclude>
-    <ClInclude Include="applying_rotation.h">
       <Filter>헤더 파일\initial_registration</Filter>
     </ClInclude>
     <ClInclude Include="stl_add_and_save.h">
       <Filter>헤더 파일\prepare</Filter>
+    </ClInclude>
+    <ClInclude Include="calc_closest_point.h">
+      <Filter>헤더 파일\ICP\calc_closest_point</Filter>
+    </ClInclude>
+    <ClInclude Include="calc_average_xyz.h">
+      <Filter>헤더 파일\initial_registration\PCA\prepare</Filter>
+    </ClInclude>
+    <ClInclude Include="calc_covariance_matrix.h">
+      <Filter>헤더 파일\initial_registration\PCA\prepare</Filter>
+    </ClInclude>
+    <ClInclude Include="calc_eigendecompostion.h">
+      <Filter>헤더 파일\initial_registration\PCA\prepare</Filter>
+    </ClInclude>
+    <ClInclude Include="applying_rotation.h">
+      <Filter>헤더 파일\initial_registration\PCA\rotation</Filter>
+    </ClInclude>
+    <ClInclude Include="calc_mat_rotation.h">
+      <Filter>헤더 파일\initial_registration\PCA\rotation</Filter>
+    </ClInclude>
+    <ClInclude Include="translation_to_origin.h">
+      <Filter>헤더 파일\initial_registration\PCA\translation</Filter>
+    </ClInclude>
+    <ClInclude Include="KDTree.hpp">
+      <Filter>헤더 파일\ICP\calc_closest_point\KD-tree</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

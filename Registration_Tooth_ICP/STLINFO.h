@@ -41,7 +41,10 @@ public:
 	vector<float> Y;
 	vector<float> Z; 
 
+	vector<pair<XYZ, XYZ>> vec_closest;
+
 	STLINFO();
 	STLINFO(STLINFO &ref);
 	void ready_for_spliting_foreach_triangle();
+	void copy_xyz_to_vec_closest();
 };
