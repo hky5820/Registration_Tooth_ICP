@@ -27,12 +27,3 @@ void STLINFO::ready_for_spliting_foreach_triangle()
 	Y.resize(num_of_triangle * 3);
 	Z.resize(num_of_triangle * 3);
 }
-
-void STLINFO::copy_xyz_to_vec_closest()
-{
-	for (unsigned int i = 0; i < num_of_triangle; i++) {
-		vec_closest.push_back({ triangle[i].first, 0 });
-		vec_closest.push_back({ triangle[i].second, 0 });
-		vec_closest.push_back({ triangle[i].third, 0 });
-	}
-}
