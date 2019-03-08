@@ -1,25 +1,35 @@
 #include "calc_closest_point.h"
+#include "insert_to_unordered_set.h"
 
-void calc_closest_point(STLINFO & info_jaw1, STLINFO & info_jaw2){
+void calc_closest_point(STLINFO & info_jaw1, STLINFO & info_jaw2, vector<pair<XYZ, XYZ>> &pair_closest_point){
 
-	pointVec points;
+	unordered_set<XYZ, hasher, compare> point_set1, point_set2;
 
-	for (unsigned int i = 0; i < info_jaw2.num_of_triangle * 3; i++) {
-		points.push_back({ info_jaw2.X[i], info_jaw2.Y[i], info_jaw2.Z[i] });
+	insert_to_unordered_set(info_jaw1, info_jaw2, point_set1, point_set2);
+
+	struct kdtree *tree_of_jaw2 = kd_create(3);
+	for (auto itr = point_set2.begin(); itr != point_set2.end(); itr++) {
+		auto &xyz = *itr;
+		kd_insert3f(tree_of_jaw2, xyz.x, xyz.y, xyz.z, 0);
 	}
 
-	KDTree tree_of_jaw2(points);
-	cout << "complete making tree\n";
+	XYZ xyz_nearest_point;
 
-	for (unsigned int i = 0; i < info_jaw1.num_of_triangle * 3; i++) {
+	struct kdres *nearest_point = 0;
+	float arr_nearest_point[3] = { 0 };
+	for (auto itr = point_set1.begin(); itr != point_set1.end(); itr++) {
 
-		pair<vector<double>,size_t> nearest_point = tree_of_jaw2.nearest_pointIndex({ info_jaw1.X[i], info_jaw1.Y[i], info_jaw1.Z[i] });
-		info_jaw1.index_closest_point.push_back(nearest_point.second);
+		auto &xyz = *itr;
+		
+		nearest_point = kd_nearest3f(tree_of_jaw2, xyz.x, xyz.y, xyz.z);
+		kd_res_itemf(nearest_point, arr_nearest_point);
+		kd_res_free(nearest_point);
 
+		xyz_nearest_point.x = arr_nearest_point[0]; 
+		xyz_nearest_point.y = arr_nearest_point[1]; 
+		xyz_nearest_point.z = arr_nearest_point[2];
+
+		pair_closest_point.push_back(make_pair(xyz, xyz_nearest_point ));
 	}
-	cout << "complete finding nearest point\n";
-	for (int i = 0; i < 1000; i++) {
-		cout << info_jaw1.index_closest_point[i] << " ";
-	}
-	cout << "\n";
+
 }

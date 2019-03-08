@@ -76,6 +76,18 @@
     <Filter Include="헤더 파일\ICP\calc_closest_point\KD-tree">
       <UniqueIdentifier>{151481c8-baa1-49dd-868c-f1a5dc2daf29}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\stl_add_and_save">
+      <UniqueIdentifier>{2000b55b-9ac4-4872-b481-8a45dfea2d9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\stl_add_and_save">
+      <UniqueIdentifier>{1ac20b10-6122-42e7-974c-12950eab90f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ICP\calc_closest_point\insert_to_unordered_set">
+      <UniqueIdentifier>{26587620-5351-4415-b2e4-222f935742b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\ICP\insert_to_unordered_set">
+      <UniqueIdentifier>{3052b530-c2b5-4f16-9596-af8a6f59df63}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -89,9 +101,6 @@
     </ClCompile>
     <ClCompile Include="initial_registration.cpp">
       <Filter>소스 파일\initial_registration</Filter>
-    </ClCompile>
-    <ClCompile Include="stl_add_and_save.cpp">
-      <Filter>소스 파일\prepare</Filter>
     </ClCompile>
     <ClCompile Include="calc_closest_point.cpp">
       <Filter>소스 파일\ICP\calc_closest_point</Filter>
@@ -114,7 +123,13 @@
     <ClCompile Include="translation_to_origin.cpp">
       <Filter>소스 파일\initial_registration\PCA\translation_to_origin</Filter>
     </ClCompile>
-    <ClCompile Include="KDTree.cpp">
+    <ClCompile Include="stl_add_and_save.cpp">
+      <Filter>소스 파일\stl_add_and_save</Filter>
+    </ClCompile>
+    <ClCompile Include="insert_to_unordered_set.cpp">
+      <Filter>소스 파일\ICP\calc_closest_point\insert_to_unordered_set</Filter>
+    </ClCompile>
+    <ClCompile Include="kdtree.c">
       <Filter>소스 파일\ICP\calc_closest_point\KD-tree</Filter>
     </ClCompile>
   </ItemGroup>
@@ -127,9 +142,6 @@
     </ClInclude>
     <ClInclude Include="initial_registration.h">
       <Filter>헤더 파일\initial_registration</Filter>
-    </ClInclude>
-    <ClInclude Include="stl_add_and_save.h">
-      <Filter>헤더 파일\prepare</Filter>
     </ClInclude>
     <ClInclude Include="calc_closest_point.h">
       <Filter>헤더 파일\ICP\calc_closest_point</Filter>
@@ -152,7 +164,13 @@
     <ClInclude Include="translation_to_origin.h">
       <Filter>헤더 파일\initial_registration\PCA\translation</Filter>
     </ClInclude>
-    <ClInclude Include="KDTree.hpp">
+    <ClInclude Include="stl_add_and_save.h">
+      <Filter>헤더 파일\stl_add_and_save</Filter>
+    </ClInclude>
+    <ClInclude Include="insert_to_unordered_set.h">
+      <Filter>헤더 파일\ICP\insert_to_unordered_set</Filter>
+    </ClInclude>
+    <ClInclude Include="kdtree.h">
       <Filter>헤더 파일\ICP\calc_closest_point\KD-tree</Filter>
     </ClInclude>
   </ItemGroup>

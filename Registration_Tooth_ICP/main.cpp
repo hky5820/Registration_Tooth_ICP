@@ -28,7 +28,11 @@ int main() {
 	cout << value_eigen1 << "\n";
 
 	initial_registration(info_jaw1, info_jaw2, vec_eigen1, vec_eigen2);
-	calc_closest_point(info_jaw1, info_jaw2);
+
+	vector<pair<XYZ, XYZ>> pair_closest_point;
+	calc_closest_point(info_jaw1, info_jaw2, pair_closest_point);
+
+
 
 	return 0;
 }

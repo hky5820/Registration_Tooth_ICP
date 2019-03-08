@@ -41,8 +41,6 @@ public:
 	vector<float> Y;
 	vector<float> Z; 
 
-	vector<int> index_closest_point;
-
 	STLINFO();
 	STLINFO(STLINFO &ref);
 	void ready_for_spliting_foreach_triangle();
