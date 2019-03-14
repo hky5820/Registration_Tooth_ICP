@@ -6,6 +6,9 @@
 #include "initial_registration.h"
 #include "stl_add_and_save.h"
 #include "calc_closest_point.h"
+#include "calc_alignment.h"
+#include "apply_alignment.h"
+#include "stl_add_and_save.h"
 
 int main() {
 
@@ -25,14 +28,20 @@ int main() {
 	Matrix3f vec_eigen1, vec_eigen2;
 	Vector3f value_eigen1, value_eigen2;
 	calc_eigendecomposition(mat_covariance1, mat_covariance2, vec_eigen1, vec_eigen2, value_eigen1, value_eigen2);
-	cout << value_eigen1 << "\n";
 
-	initial_registration(info_jaw1, info_jaw2, vec_eigen1, vec_eigen2);
+	Matrix3f mat_result_of_pca;
+	initial_registration(info_jaw1, info_jaw2, vec_eigen1, vec_eigen2, mat_result_of_pca);
 
+
+	Matrix4f mat_result_of_alignment = Matrix4f::Identity(4, 4);
+	mat_result_of_alignment.topLeftCorner(3, 3) = mat_result_of_pca;
+
+	//ICP
 	vector<pair<XYZ, XYZ>> pair_closest_point;
 	calc_closest_point(info_jaw1, info_jaw2, pair_closest_point);
-
-
+	calc_alignment(pair_closest_point, mat_result_of_alignment);
+	apply_alignment(info_jaw1, mat_result_of_alignment);
+	stl_add_and_save("result_icp.stl", info_jaw1, info_jaw2);
 
 	return 0;
 }

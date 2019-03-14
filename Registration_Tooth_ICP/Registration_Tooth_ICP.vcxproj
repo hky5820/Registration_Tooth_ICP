@@ -20,6 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="applying_rotation.cpp" />
+    <ClCompile Include="apply_alignment.cpp" />
+    <ClCompile Include="calc_alignment.cpp" />
     <ClCompile Include="calc_average_xyz.cpp" />
     <ClCompile Include="calc_closest_point.cpp" />
     <ClCompile Include="calc_eigendecompostion.cpp" />
@@ -36,6 +38,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="applying_rotation.h" />
+    <ClInclude Include="apply_alignment.h" />
+    <ClInclude Include="calc_alignment.h" />
     <ClInclude Include="calc_average_xyz.h" />
     <ClInclude Include="calc_closest_point.h" />
     <ClInclude Include="calc_eigendecompostion.h" />

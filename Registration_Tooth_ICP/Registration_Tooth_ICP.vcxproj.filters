@@ -19,9 +19,6 @@
     <Filter Include="헤더 파일\prepare">
       <UniqueIdentifier>{8c0d7c6d-0b0e-4a4a-96ab-45735221e7c2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\prepare">
-      <UniqueIdentifier>{a45b99eb-cc97-4dca-8cad-fd41e024eb22}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\load_and_split_stl_format">
       <UniqueIdentifier>{9f692d27-f247-4f89-8709-cbe4c993854b}</UniqueIdentifier>
     </Filter>
@@ -85,8 +82,23 @@
     <Filter Include="소스 파일\ICP\calc_closest_point\insert_to_unordered_set">
       <UniqueIdentifier>{26587620-5351-4415-b2e4-222f935742b9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일\ICP\insert_to_unordered_set">
+    <Filter Include="소스 파일\prepare">
+      <UniqueIdentifier>{a45b99eb-cc97-4dca-8cad-fd41e024eb22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ICP\calc_alignment">
+      <UniqueIdentifier>{2833bac2-175c-4616-8289-7b71c4646d55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\ICP\calc_alignment">
+      <UniqueIdentifier>{b448bb0b-03c8-45b9-8e37-58db38ce9ef7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\ICP\calc_closest_point\insert_to_unordered_set">
       <UniqueIdentifier>{3052b530-c2b5-4f16-9596-af8a6f59df63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ICP\apply_alignment">
+      <UniqueIdentifier>{efe42c87-d2e7-4c93-83cf-f19d7e8ea17a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\ICP\apply_alignment">
+      <UniqueIdentifier>{eae9cc20-a19a-4bc4-ab8b-7b4fe15d6b0c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +144,12 @@
     <ClCompile Include="kdtree.c">
       <Filter>소스 파일\ICP\calc_closest_point\KD-tree</Filter>
     </ClCompile>
+    <ClCompile Include="calc_alignment.cpp">
+      <Filter>소스 파일\ICP\calc_alignment</Filter>
+    </ClCompile>
+    <ClCompile Include="apply_alignment.cpp">
+      <Filter>소스 파일\ICP\apply_alignment</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="STLINFO.h">
@@ -168,10 +186,16 @@
       <Filter>헤더 파일\stl_add_and_save</Filter>
     </ClInclude>
     <ClInclude Include="insert_to_unordered_set.h">
-      <Filter>헤더 파일\ICP\insert_to_unordered_set</Filter>
+      <Filter>헤더 파일\ICP\calc_closest_point\insert_to_unordered_set</Filter>
     </ClInclude>
     <ClInclude Include="kdtree.h">
       <Filter>헤더 파일\ICP\calc_closest_point\KD-tree</Filter>
+    </ClInclude>
+    <ClInclude Include="calc_alignment.h">
+      <Filter>헤더 파일\ICP\calc_alignment</Filter>
+    </ClInclude>
+    <ClInclude Include="apply_alignment.h">
+      <Filter>헤더 파일\ICP\apply_alignment</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
