@@ -68,7 +68,6 @@ void calc_alignment(vector<pair<XYZ, XYZ>> &pair_closest_point, Matrix4f &mat_re
 		vec_for_cross_cov_x2, vec_for_cross_cov_y2, 
 		vec_for_cross_cov_z2, avg1, avg2, mat_cross_covariance);
 
-
 	JacobiSVD<MatrixXf> svd(mat_cross_covariance, ComputeThinU | ComputeThinV);
 	Matrix3f mat_rot = svd.matrixV().transpose() * svd.matrixU().transpose();
 	
