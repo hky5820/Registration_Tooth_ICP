@@ -49,9 +49,6 @@
     <Filter Include="헤더 파일\initial_registration\PCA\prepare">
       <UniqueIdentifier>{1ae215cc-f73e-491c-b174-618426d50a48}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일\initial_registration\PCA\translation">
-      <UniqueIdentifier>{b183f0eb-8121-41e3-93a7-7ddfc66e468a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="헤더 파일\initial_registration\PCA\rotation">
       <UniqueIdentifier>{6515f6fe-50b1-4152-80b1-0ad58128f9e3}</UniqueIdentifier>
     </Filter>
@@ -63,9 +60,6 @@
     </Filter>
     <Filter Include="소스 파일\initial_registration\PCA\rotation">
       <UniqueIdentifier>{12573faa-80a0-4f01-bb1d-b02e6fad85f9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\initial_registration\PCA\translation_to_origin">
-      <UniqueIdentifier>{b152ec4d-2e5c-4dc3-a4f2-26b2341d5ca2}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\ICP\calc_closest_point\KD-tree">
       <UniqueIdentifier>{044f173c-0711-4b74-a759-b394bba5f41a}</UniqueIdentifier>
@@ -100,6 +94,18 @@
     <Filter Include="헤더 파일\ICP\apply_alignment">
       <UniqueIdentifier>{eae9cc20-a19a-4bc4-ab8b-7b4fe15d6b0c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\initial_registration\PCA\initial_centroid_alignment">
+      <UniqueIdentifier>{b152ec4d-2e5c-4dc3-a4f2-26b2341d5ca2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\initial_registration\PCA\initial_centroid_alignment">
+      <UniqueIdentifier>{b183f0eb-8121-41e3-93a7-7ddfc66e468a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ICP\calc_metric">
+      <UniqueIdentifier>{ba4d0be0-c632-4064-9e26-1abe21370c2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\ICP\calc_metric">
+      <UniqueIdentifier>{ed26f7e2-1d6d-4c68-87b9-efb208c22782}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -132,9 +138,6 @@
     <ClCompile Include="calc_mat_rotation.cpp">
       <Filter>소스 파일\initial_registration\PCA\rotation</Filter>
     </ClCompile>
-    <ClCompile Include="translation_to_origin.cpp">
-      <Filter>소스 파일\initial_registration\PCA\translation_to_origin</Filter>
-    </ClCompile>
     <ClCompile Include="stl_add_and_save.cpp">
       <Filter>소스 파일\stl_add_and_save</Filter>
     </ClCompile>
@@ -149,6 +152,15 @@
     </ClCompile>
     <ClCompile Include="apply_alignment.cpp">
       <Filter>소스 파일\ICP\apply_alignment</Filter>
+    </ClCompile>
+    <ClCompile Include="PCA.cpp">
+      <Filter>소스 파일\initial_registration\PCA</Filter>
+    </ClCompile>
+    <ClCompile Include="initial_centroid_alignment.cpp">
+      <Filter>소스 파일\initial_registration\PCA\initial_centroid_alignment</Filter>
+    </ClCompile>
+    <ClCompile Include="calc_metric.cpp">
+      <Filter>소스 파일\ICP\calc_metric</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -179,9 +191,6 @@
     <ClInclude Include="calc_mat_rotation.h">
       <Filter>헤더 파일\initial_registration\PCA\rotation</Filter>
     </ClInclude>
-    <ClInclude Include="translation_to_origin.h">
-      <Filter>헤더 파일\initial_registration\PCA\translation</Filter>
-    </ClInclude>
     <ClInclude Include="stl_add_and_save.h">
       <Filter>헤더 파일\stl_add_and_save</Filter>
     </ClInclude>
@@ -196,6 +205,15 @@
     </ClInclude>
     <ClInclude Include="apply_alignment.h">
       <Filter>헤더 파일\ICP\apply_alignment</Filter>
+    </ClInclude>
+    <ClInclude Include="PCA.h">
+      <Filter>헤더 파일\initial_registration\PCA</Filter>
+    </ClInclude>
+    <ClInclude Include="initial_centroid_alignment.h">
+      <Filter>헤더 파일\initial_registration\PCA\initial_centroid_alignment</Filter>
+    </ClInclude>
+    <ClInclude Include="calc_metric.h">
+      <Filter>헤더 파일\ICP\calc_metric</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

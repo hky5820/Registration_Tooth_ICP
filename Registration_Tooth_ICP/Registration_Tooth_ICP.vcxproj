@@ -27,14 +27,16 @@
     <ClCompile Include="calc_eigendecompostion.cpp" />
     <ClCompile Include="calc_covariance_matrix.cpp" />
     <ClCompile Include="calc_mat_rotation.cpp" />
+    <ClCompile Include="calc_metric.cpp" />
     <ClCompile Include="initial_registration.cpp" />
     <ClCompile Include="insert_to_unordered_set.cpp" />
     <ClCompile Include="kdtree.c" />
     <ClCompile Include="load_and_split_stl_format.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PCA.cpp" />
     <ClCompile Include="STILINFO.cpp" />
     <ClCompile Include="stl_add_and_save.cpp" />
-    <ClCompile Include="translation_to_origin.cpp" />
+    <ClCompile Include="initial_centroid_alignment.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="applying_rotation.h" />
@@ -45,13 +47,15 @@
     <ClInclude Include="calc_eigendecompostion.h" />
     <ClInclude Include="calc_covariance_matrix.h" />
     <ClInclude Include="calc_mat_rotation.h" />
+    <ClInclude Include="calc_metric.h" />
     <ClInclude Include="initial_registration.h" />
     <ClInclude Include="insert_to_unordered_set.h" />
     <ClInclude Include="kdtree.h" />
     <ClInclude Include="load_and_split_stl_format.h" />
+    <ClInclude Include="PCA.h" />
     <ClInclude Include="STLINFO.h" />
     <ClInclude Include="stl_add_and_save.h" />
-    <ClInclude Include="translation_to_origin.h" />
+    <ClInclude Include="initial_centroid_alignment.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

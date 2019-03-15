@@ -29,7 +29,9 @@ void calc_closest_point(STLINFO & info_jaw1, STLINFO & info_jaw2, vector<pair<XY
 		xyz_nearest_point.y = arr_nearest_point[1]; 
 		xyz_nearest_point.z = arr_nearest_point[2];
 
-		pair_closest_point.push_back(make_pair(xyz, xyz_nearest_point ));
+		pair_closest_point.push_back( make_pair(xyz, xyz_nearest_point) );
 	}
+
+	kd_free(tree_of_jaw2);
 
 }
