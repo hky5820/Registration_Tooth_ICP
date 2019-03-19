@@ -30,9 +30,13 @@ public:
 	// stl format - header / num_of_triangle / vec_norm / triangle / attribute_byte_count
 	vector<unsigned char> header;
 	unsigned int num_of_triangle;  // header & num_of_triangle are just for completing format not for using
+	unsigned int num_of_triangle2;
 	vector<XYZ> vec_norm;
+	vector<XYZ> vec_norm2;
 	vector<TRIANGLE> triangle;
+	vector<TRIANGLE> triangle2;
 	vector<unsigned short> attribute_byte_count;
+	vector<unsigned short> attribute_byte_count2;
 
 	XYZ average_xyz; // for PCA
 

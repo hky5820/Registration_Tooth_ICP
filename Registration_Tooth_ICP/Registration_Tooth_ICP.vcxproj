@@ -28,6 +28,7 @@
     <ClCompile Include="calc_covariance_matrix.cpp" />
     <ClCompile Include="calc_mat_rotation.cpp" />
     <ClCompile Include="calc_metric.cpp" />
+    <ClCompile Include="PCA_ICP_Registration.cpp" />
     <ClCompile Include="initial_registration.cpp" />
     <ClCompile Include="insert_to_unordered_set.cpp" />
     <ClCompile Include="kdtree.c" />
@@ -52,6 +53,7 @@
     <ClInclude Include="insert_to_unordered_set.h" />
     <ClInclude Include="kdtree.h" />
     <ClInclude Include="load_and_split_stl_format.h" />
+    <ClInclude Include="PCA_ICP_Registration.h" />
     <ClInclude Include="PCA.h" />
     <ClInclude Include="STLINFO.h" />
     <ClInclude Include="stl_add_and_save.h" />

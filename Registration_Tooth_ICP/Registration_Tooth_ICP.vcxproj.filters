@@ -100,6 +100,9 @@
     <Filter Include="헤더 파일\initial_registration\PCA\initial_centroid_alignment">
       <UniqueIdentifier>{b183f0eb-8121-41e3-93a7-7ddfc66e468a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\main">
+      <UniqueIdentifier>{e7030793-9fa7-4146-8e65-e3c75799fbc8}</UniqueIdentifier>
+    </Filter>
     <Filter Include="소스 파일\ICP\calc_metric">
       <UniqueIdentifier>{ba4d0be0-c632-4064-9e26-1abe21370c2c}</UniqueIdentifier>
     </Filter>
@@ -159,6 +162,9 @@
     <ClCompile Include="initial_centroid_alignment.cpp">
       <Filter>소스 파일\initial_registration\PCA\initial_centroid_alignment</Filter>
     </ClCompile>
+    <ClCompile Include="PCA_ICP_Registration.cpp">
+      <Filter>소스 파일\main</Filter>
+    </ClCompile>
     <ClCompile Include="calc_metric.cpp">
       <Filter>소스 파일\ICP\calc_metric</Filter>
     </ClCompile>
@@ -211,6 +217,9 @@
     </ClInclude>
     <ClInclude Include="initial_centroid_alignment.h">
       <Filter>헤더 파일\initial_registration\PCA\initial_centroid_alignment</Filter>
+    </ClInclude>
+    <ClInclude Include="PCA_ICP_Registration.h">
+      <Filter>헤더 파일\main</Filter>
     </ClInclude>
     <ClInclude Include="calc_metric.h">
       <Filter>헤더 파일\ICP\calc_metric</Filter>
