@@ -6,7 +6,7 @@ C++
 
 ## USAGE
 
-I didn`t adjust Eigen library path
+I did not adjust Eigen library path
 Before runing, you should adjust lib path
 
 ## Data
