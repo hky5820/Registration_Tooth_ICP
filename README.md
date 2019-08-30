@@ -2,7 +2,7 @@
 
 ## Language
 
-C++ but like C 
+C++ but like C   
 ( When i make this code, i am not good at c++ and class of it.  
   So, if i have time to remake this code, i will treat all of this code in class.  
   And, recently i make another 3D-3D PCA code that is wrapped with class.  
